@@ -6,28 +6,23 @@ public class TicTac_func {
 	/**
 	 * Creating NXN array to simulate the board
 	 */
-	char[][] board = new char[3][3];
+	char[][] board = {{' ', '|', ' ', '|', ' '},
+						{'-', '|', '-', '|', '-'},
+						{' ', '|', ' ', '|', ' '},
+						{'-', '|', '-', '|', '-'},
+						{' ', '|', ' ', '|', ' '}};
 	public char ch, p1, p2;
 	public static Scanner sc = new Scanner(System.in);
-	/**
-	 * Function to initialize the board
-	 */
-	public void initialize_board() {
-		for(int i=0; i<3; i++) {
-			for(int j=0; j<3; j++) {
-				board[i][j]=' ';
-			}
-		}
-	}
+	
 	/**
 	 * Function to display the board
 	 */
 	public void display() {
-		for(int i=0; i<3; i++) {
-			for(int j=0; j<3; j++) {
-				System.out.print(board[i][j]+ " ");
+		for(char[] row : board) {
+			for(char t : row) {
+				System.out.print(t);
 			}
-			System.out.println("");
+			System.out.println();
 		}
 	}
 	/**
