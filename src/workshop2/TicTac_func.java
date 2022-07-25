@@ -43,6 +43,9 @@ public class TicTac_func {
 			break;
 		}
 	}
+	/**
+	 * Function to let the two players play the game.
+	 */
 	public void play() {
 		for(int i=1; i<=9;i++) {
 			if(i%2!=0) {
@@ -50,39 +53,39 @@ public class TicTac_func {
 				pos=sc.nextInt();
 				switch(pos) {
 				case 1:
-					board[0][0]='X';
+					board[0][0]=p1;
 					display();
 					break;
 				case 2:
-					board[0][2]='X';
+					board[0][2]=p1;
 					display();
 					break;
 				case 3:
-					board[0][4]='X';
+					board[0][4]=p1;
 					display();
 					break;
 				case 4:
-					board[2][0]='X';
+					board[2][0]=p1;
 					display();
 					break;
 				case 5:
-					board[2][2]='X';
+					board[2][2]=p1;
 					display();
 					break;
 				case 6:
-					board[2][4]='X';
+					board[2][4]=p1;
 					display();
 					break;
 				case 7:
-					board[4][0]='X';
+					board[4][0]=p1;
 					display();
 					break;
 				case 8:
-					board[4][2]='X';
+					board[4][2]=p1;
 					display();
 					break;
 				case 9:
-					board[4][4]='X';
+					board[4][4]=p1;
 					display();
 					break;
 				}
@@ -92,39 +95,39 @@ public class TicTac_func {
 				pos=sc.nextInt();
 				switch(pos) {
 				case 1:
-					board[0][0]='O';
+					board[0][0]=p2;
 					display();
 					break;
 				case 2:
-					board[0][2]='O';
+					board[0][2]=p2;
 					display();
 					break;
 				case 3:
-					board[0][4]='O';
+					board[0][4]=p2;
 					display();
 					break;
 				case 4:
-					board[2][0]='O';
+					board[2][0]=p2;
 					display();
 					break;
 				case 5:
-					board[2][2]='O';
+					board[2][2]=p2;
 					display();
 					break;
 				case 6:
-					board[2][4]='O';
+					board[2][4]=p2;
 					display();
 					break;
 				case 7:
-					board[4][0]='O';
+					board[4][0]=p2;
 					display();
 					break;
 				case 8:
-					board[4][2]='O';
+					board[4][2]=p2;
 					display();
 					break;
 				case 9:
-					board[4][4]='O';
+					board[4][4]=p2;
 					display();
 					break;
 				}
