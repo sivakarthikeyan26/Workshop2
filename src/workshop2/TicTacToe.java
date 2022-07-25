@@ -10,5 +10,6 @@ public class TicTacToe {
 		TicTac_func tf = new TicTac_func();
 		tf.choose();
 		tf.display();
+		tf.play();
 	}
 }
